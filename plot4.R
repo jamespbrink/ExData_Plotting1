@@ -23,7 +23,7 @@ plot4 <- function(){
   with(data, lines(dateTime, Sub_metering_1, col="black"))
   with(data, lines(dateTime, Sub_metering_2, col="red"))
   with(data, lines(dateTime, Sub_metering_3, col="blue"))
-  legend("topright", lty=c(1,1,1), lwd=c(2.5,2.5,2.5), box.lwd=c(0), cex=0.8, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+  legend("topright", lty=c(1,1,1), lwd=c(2.5,2.5,2.5), bty='n', cex=0.8, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   
   ##create plot 3
   plot(data$dateTime, data$Voltage, type="l", xlab="datetime", ylab="Voltage")
