@@ -1,0 +1,218 @@
+a <- available.packages()
+install.packages("slidify")
+msg <- "sup"
+msg
+msg <- "hey"
+msg
+print(msg)
+x <- 1:15
+x
+x <- 1:20
+x
+x <- C(0.5, 0.6)
+x <- c(0.5, 0.6)
+x
+x <- "cat"
+as.numeric(x)
+x <- url("http://www.james-brink.com", "r")
+readlines(x)
+y <- readLines(x)
+head(x)
+head(y)
+x <- 4
+class(x)
+x <- list(2, "a", "b", TRUE)
+x[[2]]
+x <- 1:4
+y <- 2:3
+x + Y
+x + y
+x <- c(3,5,1,10,12,6)
+x[x > 6] <- 0
+x
+x[x %in% 1:5] <- 0
+x
+x <- read.csv("hw1_data.csv")
+x <- file(hw1_data.csv)
+x <- file("hw1_data.csv")
+read.csv(x)
+readLines(x)
+dir
+dir()
+cd R
+cd "4"
+cd(R)
+cd
+cd "R"
+ls()
+cwd()
+cd()
+pwd
+args(c)
+oauth_endpoints("github")
+library(httr)
+oauth_endpoints("github")
+myapp <- oauth_app("github", "9428f2e90e539b46b5cf", "01f7d0175a659d16b97a7b508faafbf6974ce523")
+myapp
+gtoken <- config(taken = github_token)
+gtoken <- config(token = github_token)
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+library(httr)
+oauth_endpoints("github")
+myapp <- oauth_app("github", "9428f2e90e539b46b5cf", "01f7d0175a659d16b97a7b508faafbf6974ce523#
+")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+library(httpuv)
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+myapp <- oauth_app("github", "9428f2e90e539b46b5cf", "01f7d0175a659d16b97a7b508faafbf6974ce523#
+")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+github_token
+library(httr)
+library(httpuv)
+oauth_endpoints("github")
+myapp <- oauth_app("github", "9428f2e90e539b46b5cf", "01f7d0175a659d16b97a7b508faafbf6974ce523")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+git <- oauth_endpoint(NULL, "authorize", "access", base_url = "https://github.com/login/oauth")
+github_token <- oauth2.0_token(git, myapp)
+install.packages(httpuv)
+install.packages("httpuv")
+library(httpuv)
+github_token <- oauth2.0_token(git, myapp)
+myapp <- oauth_app("github", "9428f2e90e539b46b5cf", "01f7d0175a659d16b97a7b508faafbf6974ce523")
+myapp
+git <- oauth_endpoint(NULL, "authorize", "access", base_url = "https://github.com/login/oauth")
+git
+github_token <- oauth2.0_token(git, myapp)
+github_token <- oauth1.0_token(git, myapp)
+github_token <- oauth2.0_token(git, myapp)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)
+req <- with_config(gtoken, GET("https://api.github.com/users/jtleek/repos"))
+library(httr)
+library(httpuv)
+oauth_endpoints("github")
+myapp <- oauth_app("github", "9428f2e90e539b46b5cf","01f7d0175a659d16b97a7b508faafbf6974ce523")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/users/jtleek/repos", gtoken)
+stop_for_status(req)
+content(req)
+data <- content(req)
+data
+names(data)
+length(data)
+data[[5]]
+data$created_at
+acs <- read.csv("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv ")
+acs <- read.csv("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv", method="curl")
+acs <- read.csv("http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv")
+acs
+names(acs)
+acs$AGEP
+?sqldf
+install.packages(sqldf)
+install.packages("sqldf")
+sqldf("select pwgtp1 from acs where AGEP < 50")
+library(sqldf)
+sqldf("select pwgtp1 from acs where AGEP < 50")
+?readLines
+con <- url("http://biostat.jhsph.edu/~jleek/contact.html")
+readLines(con, 10)
+data <- readLines(con)
+data[10]
+nchar(data[10])
+nchar(data[20])
+nchar(data[30])
+nchar(data[100])
+data <0 read.fwf("https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for")
+data <- read.fwf("https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for")
+?read.fwf
+data <- read.fwf("https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for", widths=5)
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for", widths=5)
+data
+con <- url("https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for")
+lines <- readLines(con)
+con <- url("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for")
+lines <- readLines(con)
+nchar(lines[1])
+data <- read.fwf(con, widths=49)
+data
+class(data)
+names(data)
+data[,4]
+dim(data)
+data <- read.fwf(con, widths=49, sep="     ")
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for", widths=49, sep="     ")
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for", widths=49, sep=""\n\n\n\n\n")
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for", widths=49, sep="\n\n\n\n\n")
+data <- read.table("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for")
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for", widths=8)
+data
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for", widths=c(9,8,8,8,8))
+data
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for", widths=c(1,9,5,8,5,8,5,8,5,8))
+data
+clip <- readLines("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for")
+clip
+head(clip)
+length(clip)
+clip <- clip[5:1258,]
+clip <- clip[5:1258]
+clip
+head(clip)
+data <- read.fwf(clip,widths(1,9,5,8,5,8,5,8,5,8))
+data <- read.fwf(clip,widths=c(1,9,5,8,5,8,5,8,5,8))
+?write.csv
+data <- read.fwf(http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for,widths=c(1,9,5,8,5,8,5,8,5,8))
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for",widths=c(1,9,5,8,5,8,5,8,5,8))
+data
+data[,10]
+col4 <- data[,10]
+class(col4)
+sum(col4)
+col4 <- as.numeric(col4)
+col4
+sum(col4)
+sum(col4, na.rm = true)
+sum(col4, na.rm = TRUE)
+data
+data <- read.fwf("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for",widths=c(1,9,5,4,4,5,4,4,5,4,4,5,4,4))
+data
+data[,6]
+data[,7]
+head(data[,7])
+data[4]
+col <- data[,7]
+col[4]
+col[5]
+col[1258]
+sum(col[5:1258])
+col < as.numeric(col)
+col <- as.numeric(col)
+col
+sum(col)
+sum(col, na.rm = TRUE)
+data
+data[,7]
+col <- data[,7]
+class(col)
+as.numeric(levels(col))[col]
+col <- as.numeric(levels(col))[col]
+head(col)
+sum(col, na.rm = TRUE)
+set.seed(13435)
+X <- data.frame("var1" = sample(1:5), )
+X <- data.frame("var1" = sample(1:5), "var2" = sample(6:10), "var3" = sample(11:15))
+X <- X[sample(1:5),]; X$var2[c(1,3)] = NA
+X
+x[,1]
+X[,1]
+X[,"var2"]
+X[1:2,"var2"]
+X$var1
+source("/Users/james/R/Exploratory/ExData_Plotting1/plot1.R")
+plot1()
+source("/Users/james/R/Exploratory/ExData_Plotting1/plot2.R")
+plot2()
